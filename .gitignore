@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+data/raw/*
+!data/raw/.gitkeep
+models/*
+!models/.gitkeep
+results/*
+!results/STATUS.md
+!results/test_run.txt
+!results/confusion_matrices/
+results/confusion_matrices/*
+!results/confusion_matrices/.gitkeep

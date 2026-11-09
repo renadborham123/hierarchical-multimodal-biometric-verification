@@ -1,0 +1,84 @@
+test_duplicate_content_across_sessions (test_dataset.DatasetTests.test_duplicate_content_across_sessions) ... ok
+test_empty_manifest_rejected (test_dataset.DatasetTests.test_empty_manifest_rejected) ... ok
+test_face_voice_identity_mismatch (test_dataset.DatasetTests.test_face_voice_identity_mismatch) ... ok
+test_incomplete_data_cannot_train (test_dataset.DatasetTests.test_incomplete_data_cannot_train) ... ok
+test_live_import_rejects_enrollment_file_and_copy (test_dataset.DatasetTests.test_live_import_rejects_enrollment_file_and_copy) ... ok
+test_missing_file (test_dataset.DatasetTests.test_missing_file) ... ok
+test_one_fingerprint_reference_per_command_is_allowed (test_dataset.DatasetTests.test_one_fingerprint_reference_per_command_is_allowed) ... ok
+test_partial_integrity_valid_and_counts (test_dataset.DatasetTests.test_partial_integrity_valid_and_counts) ... ok
+test_path_escape (test_dataset.DatasetTests.test_path_escape) ... ok
+test_session_in_train_and_test_rejected (test_dataset.DatasetTests.test_session_in_train_and_test_rejected) ... ok
+test_session_policy (test_dataset.DatasetTests.test_session_policy) ... ok
+test_corrupt_bundle_rejects (test_features.FeatureTests.test_corrupt_bundle_rejects) ... ok
+test_face_hog_lbp_dimensions_and_histogram (test_features.FeatureTests.test_face_hog_lbp_dimensions_and_histogram) ... ok
+test_file_and_array_preprocessing_are_identical (test_features.FeatureTests.test_file_and_array_preprocessing_are_identical) ... C:\Users\LAPSHOP\AppData\Local\Programs\Python\Python313\Lib\site-packages\paramiko\pkey.py:82: CryptographyDeprecationWarning: TripleDES has been moved to cryptography.hazmat.decrepit.ciphers.algorithms.TripleDES and will be removed from cryptography.hazmat.primitives.ciphers.algorithms in 48.0.0.
+  "cipher": algorithms.TripleDES,
+C:\Users\LAPSHOP\AppData\Local\Programs\Python\Python313\Lib\site-packages\paramiko\transport.py:253: CryptographyDeprecationWarning: TripleDES has been moved to cryptography.hazmat.decrepit.ciphers.algorithms.TripleDES and will be removed from cryptography.hazmat.primitives.ciphers.algorithms in 48.0.0.
+  "class": algorithms.TripleDES,
+ok
+test_fingerprint_dimensions (test_features.FeatureTests.test_fingerprint_dimensions) ... ok
+test_fusion_scales_separately_then_concatenates (test_features.FeatureTests.test_fusion_scales_separately_then_concatenates) ... ok
+test_invalid_audio_rejected (test_features.FeatureTests.test_invalid_audio_rejected) ... ok
+test_invalid_images_rejected (test_features.FeatureTests.test_invalid_images_rejected) ... ok
+test_missing_artifacts_reject_all_modalities_and_command (test_features.FeatureTests.test_missing_artifacts_reject_all_modalities_and_command) ... ok
+test_prediction_disagreement_rejects_even_at_small_distance (test_features.FeatureTests.test_prediction_disagreement_rejects_even_at_small_distance) ... C:\Users\LAPSHOP\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\externals\loky\backend\context.py:131: UserWarning: Could not find the number of physical cores for the following reason:
+[WinError 2] The system cannot find the file specified
+Returning the number of logical cores instead. You can silence this warning by setting LOKY_MAX_CPU_COUNT to the number of cores you want to use.
+  warnings.warn(
+  File "C:\Users\LAPSHOP\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\externals\loky\backend\context.py", line 247, in _count_physical_cores
+    cpu_count_physical = _count_physical_cores_win32()
+  File "C:\Users\LAPSHOP\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\externals\loky\backend\context.py", line 299, in _count_physical_cores_win32
+    cpu_info = subprocess.run(
+        "wmic CPU Get NumberOfCores /Format:csv".split(),
+        capture_output=True,
+        text=True,
+    )
+  File "C:\Users\LAPSHOP\AppData\Local\Programs\Python\Python313\Lib\subprocess.py", line 554, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LAPSHOP\AppData\Local\Programs\Python\Python313\Lib\subprocess.py", line 1039, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        pass_fds, cwd, env,
+                        ^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+                        gid, gids, uid, umask,
+                        ^^^^^^^^^^^^^^^^^^^^^^
+                        start_new_session, process_group)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LAPSHOP\AppData\Local\Programs\Python\Python313\Lib\subprocess.py", line 1554, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+                             # no special security
+                             ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+                             cwd,
+                             ^^^^
+                             startupinfo)
+                             ^^^^^^^^^^^^
+ok
+test_threshold_uses_validation_genuine_and_wrong_claims (test_features.FeatureTests.test_threshold_uses_validation_genuine_and_wrong_claims) ... ok
+test_voice_30_features_and_stereo_resampling (test_features.FeatureTests.test_voice_30_features_and_stereo_resampling) ... ok
+test_zero_denominators_are_explicit (test_features.FeatureTests.test_zero_denominators_are_explicit) ... ok
+test_admin_unlock (test_permissions.PermissionTests.test_admin_unlock) ... ok
+test_employee_status (test_permissions.PermissionTests.test_employee_status) ... ok
+test_employee_unlock_denied (test_permissions.PermissionTests.test_employee_unlock_denied) ... ok
+test_guest_report_denied (test_permissions.PermissionTests.test_guest_report_denied) ... ok
+test_unknown_user_role_and_command (test_permissions.PermissionTests.test_unknown_user_role_and_command) ... ok
+test_every_failed_gate_stops_remaining_stages (test_pipeline.PipelineTests.test_every_failed_gate_stops_remaining_stages) ... ok
+test_invalid_biometric_stops_action (test_pipeline.PipelineTests.test_invalid_biometric_stops_action) ... ok
+test_missing_real_model_rejects_pipeline (test_pipeline.PipelineTests.test_missing_real_model_rejects_pipeline) ... ok
+test_offline_trials_never_execute (test_pipeline.PipelineTests.test_offline_trials_never_execute) ... ok
+test_same_voice_vector_and_one_recording (test_pipeline.PipelineTests.test_same_voice_vector_and_one_recording) ... ok
+test_unknown_claim_rejects_before_capture (test_pipeline.PipelineTests.test_unknown_claim_rejects_before_capture) ... ok
+test_unknown_command_stops_action (test_pipeline.PipelineTests.test_unknown_command_stops_action) ... ok
+test_unverified_unlock_prediction_cannot_execute (test_pipeline.PipelineTests.test_unverified_unlock_prediction_cannot_execute) ... ok
+test_verified_admin_unlock_allowed (test_pipeline.PipelineTests.test_verified_admin_unlock_allowed) ... ok
+test_verified_employee_status_allowed (test_pipeline.PipelineTests.test_verified_employee_status_allowed) ... ok
+test_verified_employee_unlock_denied (test_pipeline.PipelineTests.test_verified_employee_unlock_denied) ... ok
+test_verified_guest_report_denied (test_pipeline.PipelineTests.test_verified_guest_report_denied) ... ok
+
+----------------------------------------------------------------------
+Ran 40 tests in 4.918s
+
+OK
